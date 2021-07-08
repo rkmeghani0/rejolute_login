@@ -8,11 +8,17 @@ class StringResource {
   static const String INSTITUTE_ADD_1 = "Institution/Office Address Line";
   static const String CITY = "City";
   static const String ZIP = "Zip";
+  static const String LOGIN = "Login";
+  static const String SIGN_IN = "Sign In";
+  static const String ENTER_EMAIL_ADDRESS = "Enter Email Address";
+  static const String ENTER_PASSWORD = "Enter Password";
+
   static const String CHOOSE_PRODUCTS = "Choose Products";
   static const String PATIENT_NAME = "Patient Name";
   static const String DOB = "DOB";
   static const String GENDER = "Gender";
   static const String EMAIL = "Email";
+  static const String PASSWORD = "Password";
   static const String DATE_OF_REQUEST = "Date of Request";
   static const String HEALTH_SIGNATURE = "Health Care professional's Signature";
   static const String REPRESENTATIVE_NAME = "Representative Name";

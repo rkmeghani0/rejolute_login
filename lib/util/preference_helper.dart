@@ -24,6 +24,25 @@ class PreferenceHelper {
     pref.setString("token", token);
   }
 
+  // get a current user token
+  static Future<String?> getEmail() async {
+    String? value;
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    value = pref.get("userEmail") as String?;
+    if (value?.isEmpty ?? true) {
+      return null;
+    } else {
+      return value;
+    }
+  }
+
+  // save current user token
+  static saveEmail(String token) async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    if (token == null) return;
+    pref.setString("userEmail", token);
+  }
+
   // save Cart Value
   static saveCartData(List<ProductCartData>? user) async {
     SharedPreferences pref = await SharedPreferences.getInstance();

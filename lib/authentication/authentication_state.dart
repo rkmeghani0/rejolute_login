@@ -23,6 +23,20 @@ class AuthenticationLoadingState extends AuthenticationState {
   }
 }
 
+class AuthenticationunAuthenticatedState extends AuthenticationState {
+  @override
+  String toString() {
+    return 'AuthenticationunAuthenticatedState';
+  }
+}
+
+class AuthenticationAuthenticatedState extends AuthenticationState {
+  @override
+  String toString() {
+    return 'AuthenticationAuthenticatedState';
+  }
+}
+
 class AuthenticationMedicalScreenSate extends AuthenticationState {
   @override
   String toString() {
